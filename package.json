@@ -34,7 +34,9 @@
     "serve-web": "grunt serve-web",
     "serve-web:dist": "grunt serve-web:dist",
     "test": "jest",
-    "postinstall": "npm install fbjs@0.6.0"
+    "postinstall": "npm install fbjs@0.6.0",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "window": {
     "toolbar": true,
@@ -72,7 +74,8 @@
     "react-native-cli": "^0.1.10",
     "react-router": "^2.0.1",
     "serve-static": "^1.10.2",
-    "uniqid": "^1.0.0"
+    "uniqid": "^1.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel": "^6.5.2",
@@ -117,5 +120,6 @@
     "url-loader": "^0.5.7",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
-  }
+  },
+  "snyk": true
 }
